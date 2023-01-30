@@ -1,0 +1,22 @@
+[
+  {
+    "id": "test",
+    "execute-command": "echo",
+    "response-message": "I got the payload!{key}",
+    "response-headers":
+    [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "*"
+      }
+    ],
+    "pass-arguments-to-command": 
+    [
+      {
+        "source": "url",
+        "name": "key"
+      }
+    ],
+    "include-command-output-in-response": true,
+  }
+]
